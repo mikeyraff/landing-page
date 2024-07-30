@@ -6,7 +6,8 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>ML Project</title>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,12 +17,11 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Machine Learning Project</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						<li><a href="generic.html" class="active">Project</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,10 +32,15 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h1 class="major">Predicting S&P 500 Stock Prices based on Last Closing Price</h1>
+							<p>The stock market is dynamic, prompting experts worldwide to seek patterns within price movements and indexes diligently. I try to explore and focus on predicting the stock market by examining the S&P 500 prices and analyzing the closing prices from the preceding five days. To achieve this, I trained six models and studied the prices of 4379 days. I gathered stock prices using API through Yahoo Finance. I manually added the binary result column to the dataset, showing an increase and decrease in price. The dimensions of the dataset are 4380 by 7. For a numerical summary of the dataset, I graphed the mean and std of the important variables, showing descriptive statistics.</p>
+							<div class="image-grid">
+								<img src="images/ppic1.png" alt="Image 1" class="image fit" />
+								<img src="images/ppic2.png" alt="Image 2" class="image fit" />
+								<img src="images/ppic3.png" alt="Image 3" class="image fit" />
+								<img src="images/ppic4.png" alt="Image 4" class="image fit" />
+      						</div>
+							<p>The logistic regression model may have a bias towards predicting one class more frequently, which can be due to the model's inherent biases, the way it's been trained, or the features it's using. I used SVC and Logistic Regression to determine how the closing price changed. The SVC parameters include a linear kernel and C value of 10, and Logistic Regression parameters include the default max iteration and C value of 100. Although both these models had accuracy scores around 54%, the model had many false positive predictions, as seen in the confusion matrix below. Aside from SVR and linear regression, I used other regression like kNN, Decision Tree, and Random Forest. After conducting a hyperparameter tuning, I concluded that our best model is linear regression with an R-squared of 96.39% on test data. This indicates that the strategy outperformed the S&P 500 index within the specified period, showcasing the efficacy of the predictive model.</p>
 						</div>
 					</section>
 
@@ -45,7 +50,8 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="assets/Presentation.pdf" class="button">Full Presentation</a></li>
+						<li>@ 2024 Michael Raffanti</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
